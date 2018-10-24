@@ -1,33 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="inner-banner b-img-01">
-    <div class="black-overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="info">
-                        <h1>About 01</h1>
-                        <h2>Go beyond logistics, make the revolution business.</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bread-crumb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ol class="breadcrumb">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Company</a></li>
-                            <li class="active">About 02</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include 'banner.html' with title="关于我们" name='about'%}
 
 
 <div class="home-03-about-us">

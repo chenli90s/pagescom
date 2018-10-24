@@ -2,33 +2,7 @@
 
 {% block content %}
 
-
-    <div class="inner-banner b-img-11">
-        <div class="black-overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="info">
-                            <h1>Login</h1>
-                            <h2>Go beyond logistics, make the revolution business.</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bread-crumb">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <ol class="breadcrumb">
-                                <li><a href="">Home</a></li>
-                                <li class="active">Login</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include "banner.html" with title="登陆" name="login" %}
 
 
     <div class="container-fluid shop-login">
