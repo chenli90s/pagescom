@@ -14,7 +14,7 @@ class OurGood(BaseModel):
 
     name = "我们的经验"
 
-    more = False
+    more = True
 
 
     擅长的领域描述 = models.CharField(max_length=255)
@@ -29,3 +29,11 @@ class OurTeam(BaseModel):
 
     团队人员姓名 = models.CharField(max_length=255)
     团队人员职位 = models.CharField(max_length=255)
+
+
+class OurPartners(BaseModel):
+
+
+    name = "我们的合作伙伴"
+
+    more = True

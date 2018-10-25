@@ -1,7 +1,7 @@
 from .base import models, BaseModel
 
 
-class OurGuidance(BaseModel):
+class OurGuidances(BaseModel):
 
     name = "我们的指导"
 
@@ -15,7 +15,7 @@ class OurAdvantage(BaseModel):
 
     name = "我们的优点"
 
-    more = False
+    more = True
 
 
     优点描述 = models.CharField(max_length=255)

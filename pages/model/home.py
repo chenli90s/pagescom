@@ -31,7 +31,7 @@ class Choiceus(BaseModel):
 
     name = "为什么选择我们"
 
-    more = False
+    more = True
 
     选择原因 = models.CharField(max_length=255)
     选择原因标题 = models.CharField(max_length=255)
@@ -53,4 +53,15 @@ class Comment(BaseModel):
 
     more = True
 
+
+    客户头像 = models.CharField(max_length=255)
+    客户姓名 = models.CharField(max_length=255)
+    客户职位 = models.CharField(max_length=255)
     客户描述 = models.CharField(max_length=255)
+
+
+class Clients(BaseModel):
+
+    name = "客户"
+
+    more = True
