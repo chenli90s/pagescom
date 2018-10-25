@@ -23,3 +23,32 @@ class OurService(BaseModel):
 
     服务类型 = models.CharField(max_length=255)
     服务描述 = models.CharField(max_length=255)
+
+
+class Choiceus(BaseModel):
+
+    name = "为什么选择我们"
+
+    more = False
+
+    选择原因 = models.CharField(max_length=255)
+    选择原因标题 = models.CharField(max_length=255)
+
+
+class News(BaseModel):
+
+    name = "最新消息"
+
+    more = True
+
+    消息内容 = models.CharField(max_length=255)
+    消息标题 = models.CharField(max_length=255)
+
+
+class Comment(BaseModel):
+
+    name = "客户评价"
+
+    more = True
+
+    客户描述 = models.CharField(max_length=255)
