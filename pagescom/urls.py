@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import pages
+
+from rest_framework import routers
+from api.home import *
+
+router = routers.DefaultRouter()
+router.register('^slider', SliderViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path(r'api/', include(router.urls)),
     path('', include('pages.urls'))
 ]
