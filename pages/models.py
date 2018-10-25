@@ -9,6 +9,8 @@ from .model.service import *
 
 class GlobalModel(models.Model):
 
+    logo = models.ImageField(null=True, blank=True)
+
     标题 = models.CharField(max_length=255)
 
     地址 = models.CharField(max_length=255)
@@ -28,12 +30,3 @@ class GlobalModel(models.Model):
     QQ = models.CharField(max_length=255)
 
     淘宝 = models.CharField(max_length=255)
-
-
-
-
-
-
-
-
-

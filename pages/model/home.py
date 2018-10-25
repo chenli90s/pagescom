@@ -21,5 +21,7 @@ class OurService(BaseModel):
 
     more = True
 
+    口号 = models.CharField(max_length=255)
+
     服务类型 = models.CharField(max_length=255)
     服务描述 = models.CharField(max_length=255)
