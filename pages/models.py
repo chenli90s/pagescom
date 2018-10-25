@@ -3,6 +3,7 @@ from .model.home import *
 from .model.about import *
 from .model.product import *
 from .model.service import *
+from .model.contact import *
 # Create your models here.
 
 
