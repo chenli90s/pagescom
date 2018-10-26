@@ -21,9 +21,12 @@ def tplt(tp):
 # Create your views here.
 @tplt('home.html')
 def home():
-    sliders = Slider.objects.all()[::1]
-
-    return dict(sliders=sliders,)
+    sliders = Slider.objects.all()
+    service = OurService.objects.all()
+    choiceus = Choiceus.objects.all()
+    news = News.objects.all()
+    comment = Comment.objects.all()
+    return dict(sliders=sliders, services=service, choiceus=choiceus, news=news, comment=comment)
 
 
 def about(request):

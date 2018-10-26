@@ -14,22 +14,22 @@ class OurServiceSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
-        model = Slider
-        fields = ('口号', '服务类型', '服务描述')+base_fields
+        model = OurService
+        fields = ('服务类型', '服务描述')+base_fields
 
 
 class ChoiceusSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
-        model = Slider
+        model = Choiceus
         fields = ('选择原因', '选择原因标题')+base_fields
 
 class NewsSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
-        model = Slider
+        model = News
         fields = ('消息内容', '消息标题')+base_fields
 
 
@@ -37,7 +37,7 @@ class CommentSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
-        model = Slider
+        model = Comment
         fields = ('客户头像', '客户姓名', '客户职位', '客户描述')+base_fields
 
 
