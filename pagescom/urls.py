@@ -18,14 +18,39 @@ from django.urls import path, include
 
 from rest_framework import routers
 from api.home import *
+from api.about import *
+from api.contact import *
+from api.product import *
+from api.service import *
 
+# home
 router = routers.DefaultRouter()
-router.register('^slider', SliderViewSet)
+router.register('/slider', SliderViewSet)
+router.register('/ourService', OurServiceViewSet)
+router.register('/choiceus', ChoiceusViewSet)
+router.register('/news', NewsViewSet)
+router.register('/comment', CommentViewSet)
+router.register('/clients', ClientsViewSet)
 
+# about
+router.register('/ourGuidance', OurGuidanceViewSet)
+router.register('/ourGood', OurGoodViewSet)
+router.register('/ourTeam', OurTeamViewSet)
+router.register('/ourPartners', OurPartnersViewSet)
+
+# contact
+router.register('/contacts', ContactsViewSet)
+
+# service
+router.register('/ourGuidances', OurGuidancesViewSet)
+router.register('/ourAdvantage', OurAdvantageViewSet)
+
+# product
+router.register('/ourProduct', OurProductViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path(r'api/', include(router.urls)),
+    path(r'api', include(router.urls)),
+    path(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('', include('pages.urls'))
 ]
