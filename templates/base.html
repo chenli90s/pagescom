@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mowasalat - Logistics and Transports Website Template</title>
+    <title>{{ g.标题 }}</title>
 
     <link href="static/css/all-stylesheets.css" rel="stylesheet">
 
@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index-001.html"><img src="static/picture/logo.png" alt=""></a>
+            <a class="navbar-brand" href="home"><img src="{{ g.logo }}" alt=""></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             {#            <ul class="nav navbar-nav navbar-right  hidden-xs">#}
@@ -102,7 +102,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 about">
                     <h1>关于我们</h1>
                     <div class="about">
-                        斐尔普森在精密测量、钣金加工以及紧固件和电子材料等领域拥有专业技术。公司向众多行业和领域提供产品和服务，包括汽车零部件行业的工件测量以及校准、到电力系统各式机箱机柜和医疗设备外壳以及用于3C行业的电子辅料等。
+                        {{ g.关于我们 }}
                     </div>
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -114,16 +114,18 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 head-office">
                     <h1>联系方式</h1>
                     <ul class="office-icons">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1422 1st St. Santa
-                            Rosa,t CA, USA.
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            {{ g.地址 }}
                         </li>
                         <li><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i> <span
-                                class="__cf_email__"
-                                data-cfemail="9cfdf8f1f5f2dcf9b1f1fdf5f0b2fff3f1">[email&#160;protected]</span></a>
+{#                                class="__cf_email__"#}
+                                data-cfemail="9cfdf8f1f5f2dcf9b1f1fdf5f0b2fff3f1">
+{#                            [email&#160;protected]#}
+                            {{ g.邮箱 }}
+                        </span></a>
                         </li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> 002- 01008431112</li>
-                        <li><a href=""><i class="fa fa-mobile" aria-hidden="true"></i> 002-
-                            01008431112</a></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> {{ g.电话 }}</li>
+                        <li><a href=""><i class="fa fa-mobile" aria-hidden="true"></i> {{ g.手机 }}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 useful-links">

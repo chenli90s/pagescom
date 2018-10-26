@@ -1,12 +1,33 @@
 from django.shortcuts import render
 from django.shortcuts import render
+from .model.service import *
+from .model.home import *
+from .model.about import *
+from .model.contact import *
+from .model.product import *
+from .models import *
+
+def tplt(tp):
+    def wrapper(func):
+        def inner(request):
+            params = func()
+            g = GlobalModel.objects.all()[0]
+            params['g'] = g
+            return render(request, tp, params)
+        return inner
+    return wrapper
+
 
 # Create your views here.
-def home(request):
-    return render(request, "home.html")
+@tplt('home.html')
+def home():
+    sliders = Slider.objects.all()[::1]
+
+    return dict(sliders=sliders,)
 
 
 def about(request):
+
     return render(request, "about.html")
 
 

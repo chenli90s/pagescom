@@ -10,9 +10,11 @@ from .model.contact import *
 
 class GlobalModel(models.Model):
 
+    name = '全局设置'
 
+    more = False
 
-    logo = models.ImageField(null=True, blank=True)
+    logo = models.ImageField(null=True, blank=True, upload_to="static/imgs")
 
     标题 = models.CharField(max_length=255)
 
@@ -26,10 +28,10 @@ class GlobalModel(models.Model):
 
     关于我们 = models.CharField(max_length=255)
 
-    微信 = models.CharField(max_length=255)
+    微信 = models.CharField(max_length=255, blank=True)
 
-    微博 = models.CharField(max_length=255)
+    微博 = models.CharField(max_length=255, blank=True)
 
-    QQ = models.CharField(max_length=255)
+    QQ = models.CharField(max_length=255, blank=True)
 
-    淘宝 = models.CharField(max_length=255)
+    淘宝 = models.CharField(max_length=255, blank=True)

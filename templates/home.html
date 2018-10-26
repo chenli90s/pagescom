@@ -9,17 +9,17 @@
             <div id="rev_slider_204_1" class="rev_slider fullwidthabanner" style="display:none;"
                  data-version="5.1.1RC">
                 <ul>
-
+                    {% for slider in sliders %}
                     <li data-index="rs-681" data-transition="zoomin" data-slotamount="default"
                         data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
                         data-masterspeed="2000"
                         data-rotate="0"
                         data-fstransition="fade"
                         data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
-                        data-title="Air Freight"
+                        data-title="{{ slider.口号 }}"
                         data-description="">
 
-                        <img src="static/picture/1.jpg" alt="" data-bgposition="center center"
+                        <img src="{{ slider.上传图片 }}" alt="" data-bgposition="center center"
                              data-kenburns="on"
                              data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
                              data-scaleend="130"
@@ -29,7 +29,7 @@
 
 
                         <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-                             id="slide-681-layer-bg"
+                             id="slide-68{{ slider.id }}-layer-bg"
                              data-x="['right','right','left','left']"
                              data-hoffset="['0','0','0','0']"
                              data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-1"
-                             id="slide-681-layer-1"
+                             id="slide-68{{ slider.id }}-layer-1"
                              data-x="['left','center','center','center']"
                              data-hoffset="['0','0','0','0']"
                              data-y="['center','center','center','center']"
@@ -56,11 +56,11 @@
                              data-splitin="none" data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index: 6; white-space: nowrap; text-transform:uppercase; letter-spacing:3px; font-weight:300;">
-                            WE DELIVER
+                            {{ slider.口号 }}
                         </div>
 
                         <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-2"
-                             id="slide-681-layer-2"
+                             id="slide-68{{ slider.id }}-layer-2"
                              data-x="['left','center','center','center']"
                              data-hoffset="['0','0','0','0']"
                              data-y="['center','center','center','center']"
@@ -76,15 +76,15 @@
                              data-start="1000" data-splitin="chars"
                              data-splitout="none" data-elementdelay="0.05"
                              data-responsive_offset="on"
-                             style="z-index: 6; white-space: nowrap;">CARGO WORLDWIDE
+                             style="z-index: 6; white-space: nowrap;">{{ slider.响亮口号 }}
                         </div>
 
                         <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-3"
-                             id="slide-681-layer-3"
+                             id="slide-68{{ slider.id }}-layer-3"
                              data-x="['left','center','center','center']"
                              data-hoffset="['0','0','0','0']"
                              data-y="['center','center','center','center']"
-                             data-voffset="['20','50','50','50']"
+                             data-voffset="['30','50','50','50']"
                              data-fontsize="['16','16','16','14']"
                              data-lineheight="['18','18','18','18']"
                              data-width="['650','450','450','300']" data-height="none"
@@ -96,8 +96,7 @@
                              data-splitin="none" data-splitout="none"
                              data-responsive_offset="on"
                              style="z-index: 6; min-width: 300px; max-width: 650px; white-space: normal; font-weight:300;">
-                            Go beyond logistics, make the world go round and more forrevolution
-                            business.
+                            {{ slider.使命 }}
                         </div>
                     </li>
 
@@ -192,6 +191,7 @@
                             business.
                         </div>
                     </li>
+                    {% endfor %}
                 </ul>
                 <div class="tp-bannertimer"
                      style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>

@@ -48,14 +48,3 @@ class ClientsSerizlizers(serializers.ModelSerializer):
         fields = base_fields
 
 
-
-
-
-
-
-
-
-
-
-
-
