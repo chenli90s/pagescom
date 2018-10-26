@@ -10,6 +10,8 @@ from .model.contact import *
 
 class GlobalModel(models.Model):
 
+
+
     logo = models.ImageField(null=True, blank=True)
 
     标题 = models.CharField(max_length=255)
