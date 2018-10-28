@@ -217,121 +217,43 @@
             <div class="row no-gutter-12">
                 <div class="col-lg-12">
                     <div class="home-our-services-carousel">
-
+                        {% for service in services %}
                         <div class="block">
                             <div class="picture">
                                 <div class="top-overlay"></div>
-                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"
+                                <img src="{{ service.上传图片 }}"
                                      class="img-responsive"
                                      alt="">
                                 <div class="bottom-overlay"></div>
                             </div>
                             <div class="contents">
-                                <h1>Land Transport</h1>
+                                <h1>{{ service.服务类型 }}</h1>
                                 <div class="line"></div>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg minim veniam.
-                                </div>
+                                <div class="description">{{ service.服务描述 }}</div>
                             </div>
                         </div>
+                        {% endfor %}
+                        
 
-
-                        <div class="block">
-                            <div class="picture">
-                                <div class="top-overlay"></div>
-                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"
-                                     class="img-responsive"
-                                     alt="">
-                                <div class="bottom-overlay"></div>
-                            </div>
-                            <div class="contents">
-                                <h1>Air Freight</h1>
-                                <div class="line"></div>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg minim veniam.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="block">
-                            <div class="picture">
-                                <div class="top-overlay"></div>
-                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"
-                                     class="img-responsive"
-                                     alt="">
-                                <div class="bottom-overlay"></div>
-                            </div>
-                            <div class="contents">
-                                <h1>Sea Freight</h1>
-                                <div class="line"></div>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg minim veniam.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="block">
-                            <div class="picture">
-                                <div class="top-overlay"></div>
-                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"
-                                     class="img-responsive"
-                                     alt="">
-                                <div class="bottom-overlay"></div>
-                            </div>
-                            <div class="contents">
-                                <h1>Rail Freight</h1>
-                                <div class="line"></div>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg minim veniam.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="block">
-                            <div class="picture">
-                                <div class="top-overlay"></div>
-                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"
-                                     class="img-responsive"
-                                     alt="">
-                                <div class="bottom-overlay"></div>
-                            </div>
-                            <div class="contents">
-                                <h1>Warehousing</h1>
-                                <div class="line"></div>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg minim veniam.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="block">
-                            <div class="picture">
-                                <div class="top-overlay"></div>
-                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"
-                                     class="img-responsive"
-                                     alt="">
-                                <div class="bottom-overlay"><img
-                                        src="static/picture/overlay-bottom.png"
-                                        class="img-responsive" alt=""></div>
-                            </div>
-                            <div class="contents">
-                                <h1>Cargo Management</h1>
-                                <div class="line"></div>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg minim veniam.
-                                </div>
-                            </div>
-                        </div>
+{#                        <div class="block">#}
+{#                            <div class="picture">#}
+{#                                <div class="top-overlay"></div>#}
+{#                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"#}
+{#                                     class="img-responsive"#}
+{#                                     alt="">#}
+{#                                <div class="bottom-overlay"><img#}
+{#                                        src="static/picture/overlay-bottom.png"#}
+{#                                        class="img-responsive" alt=""></div>#}
+{#                            </div>#}
+{#                            <div class="contents">#}
+{#                                <h1>Cargo Management</h1>#}
+{#                                <div class="line"></div>#}
+{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+{#                                    elit, sed do eiusmod#}
+{#                                    tempor for enim adesg minim veniam.#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
 
                     </div>
                 </div>
@@ -356,11 +278,12 @@
                         src="static/picture/9567f7434bc747c0b45771ae9ba7b5d7.gif"
                         class="img-responsive center-block" alt=""></div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="description">但在某些情况下和责任或义务，看看拉赫快乐合理遇到是通过建立保护创建期货极为痛苦MES的后果。
-                    </div>
+{#                    <div class="description">但在某些情况下和责任或义务，看看拉赫快乐合理遇到是通过建立保护创建期货极为痛苦MES的后果。#}
+{#                    </div>#}
                     <div class="row">
 
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        {% for choiceu in choiceus %}
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="block">
                                 <div class="icon"><span class="icon-warehouse"></span></div>
                                 <h1>为什么好</h1>
@@ -368,42 +291,45 @@
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
 
 
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="block">
-                                <div class="icon"><span class="icon-truck22"></span></div>
-                                <h1>Goods Packaging</h1>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg ens minim veniam.
-                                </div>
-                            </div>
-                        </div>
 
 
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="block">
-                                <div class="icon"><span class="icon-ship"></span></div>
-                                <h1>Goods Packaging</h1>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg ens minim veniam.
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="block">
-                                <div class="icon"><span class="icon-security"></span></div>
-                                <h1>Goods Packaging</h1>
-                                <div class="description">Lorem ipsum dolor sit , consectet adipisi
-                                    elit, sed do eiusmod
-                                    tempor for enim adesg ens minim veniam.
-                                </div>
-                            </div>
-                        </div>
+{#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
+{#                            <div class="block">#}
+{#                                <div class="icon"><span class="icon-truck22"></span></div>#}
+{#                                <h1>Goods Packaging</h1>#}
+{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+{#                                    elit, sed do eiusmod#}
+{#                                    tempor for enim adesg ens minim veniam.#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{##}
+{#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
+{#                            <div class="block">#}
+{#                                <div class="icon"><span class="icon-ship"></span></div>#}
+{#                                <h1>Goods Packaging</h1>#}
+{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+{#                                    elit, sed do eiusmod#}
+{#                                    tempor for enim adesg ens minim veniam.#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{##}
+{#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
+{#                            <div class="block">#}
+{#                                <div class="icon"><span class="icon-security"></span></div>#}
+{#                                <h1>Goods Packaging</h1>#}
+{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+{#                                    elit, sed do eiusmod#}
+{#                                    tempor for enim adesg ens minim veniam.#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
 
                     </div>
                 </div>
