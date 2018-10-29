@@ -29,10 +29,13 @@ def home():
     clients = Clients.objects.all()
     return dict(sliders=sliders, services=service, choiceus=choiceus, news=news, comments=comment, clients=clients)
 
-
+@tplt('about.html')
 def about(request):
-
-    return render(request, "about.html")
+    ourGuidances = OurGuidance.objects.all()
+    ourGoods = OurGood.objects.all()
+    ourTeams = OurTeam.objects.all()
+    ourPartners = OurPartners.objects.all()
+    return dict(ourGuidances=ourGuidances, ourGoods=ourGoods, ourTeams=ourTeams, ourPartners=ourPartners)
 
 
 def service(request):

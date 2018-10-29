@@ -8,7 +8,7 @@ class OurGuidanceSerizlizers(serializers.ModelSerializer):
     class Meta:
 
         model = OurGuidance
-        fields = ('指导类型', '指导描述')+base_fields
+        fields = ('业务类型', '业务描述')+base_fields
 
 
 

@@ -2,19 +2,19 @@ from .base import models, BaseModel
 
 class OurGuidance(BaseModel):
 
-    name = "我们的指导"
+    name = "我们的业务"
 
     more = True
 
-    指导类型 = models.CharField(max_length=255)
-    指导描述 = models.CharField(max_length=255)
+    业务类型 = models.CharField(max_length=255)
+    业务描述 = models.CharField(max_length=255)
 
 
 class OurGood(BaseModel):
 
     name = "我们的经验"
 
-    more = True
+    more = False
 
 
     擅长的领域描述 = models.CharField(max_length=255)
