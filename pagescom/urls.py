@@ -54,9 +54,12 @@ router.register('ourProductcate', OurProductCateViewSet)
 router.register('globals', GlobalsViewSet)
 
 
+from rest_framework_jwt.views import obtain_jwt_token
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'api/', include(router.urls)),
     path(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('', include('pages.urls'))
+    path('', include('pages.urls')),
+    path(r'api-token-auth/', obtain_jwt_token),
 ]
