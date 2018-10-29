@@ -48,6 +48,7 @@ router.register('ourAdvantage', OurAdvantageViewSet)
 
 # product
 router.register('ourProduct', OurProductViewSet)
+router.register('ourProductcate', OurProductCateViewSet)
 
 # globals
 router.register('globals', GlobalsViewSet)

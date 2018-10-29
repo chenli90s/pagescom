@@ -74,9 +74,10 @@
                        aria-haspopup="true"
                        aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu dropdown-menu-left">
-                        <li><a href="product">分类1</a></li>
-                        <li><a href="product">分类2</a></li>
-                        <li><a href="product">分类3</a></li>
+                        {% for cate in cates %}
+                            <li><a href="product.{{ cate.产品分类 }}">{{ cate.产品分类 }}</a></li>
+                        {% endfor %}
+
                         {#                        <li><a href="login">登陆</a></li>#}
                         {#                        <li><a href="register">注册</a></li>#}
                     </ul>
@@ -170,7 +171,6 @@
         </div>
     </div>
 </footer>
-
 
 {% block js %}
 

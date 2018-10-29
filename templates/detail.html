@@ -1,94 +1,14 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+
 
 {% block content %}
-    {% include "banner.html" with title=cate name="product" %}
-
-
-    <div class="container shop">
-        <div class="row">
-            <div class="col-lg-10 col-md-10 col-sm-8">
-                <div class="hero-text-2">
-                    <h1>产品分类名称</h1>
-                    <div class="line"></div>
-                </div>
-            </div>
-            {#            <div class="col-lg-2 col-md-2 col-sm-4 sorting">#}
-            {#                <div class="form-group">#}
-            {#                    <select class="form-control">#}
-            {#                        <option>Default Sorting</option>#}
-            {#                        <option>2</option>#}
-            {#                        <option>3</option>#}
-            {#                        <option>4</option>#}
-            {#                        <option>5</option>#}
-            {#                    </select>#}
-            {#                </div>#}
-            {#            </div>#}
-        </div>
-        <div class="row">
-            {% for foo in "123456787654"|make_list %}
-                <div class="col-lg-3 col-md-3 col-sm-6 product">
-                    <div class="picture"><img
-                            src="static/picture/8deb749914a442ff965b93049da5159b.gif"
-                            class="img-responsive" alt=""></div>
-                    <div class="info clearfix">
-                        <div class="name">Product Name</div>
-                        {#                    <div class="price">£56.00</div>#}
-                        {#                    <div class="star">#}
-                        {#                        <ul>#}
-                        {#                            <li><i class="fa fa-star"></i></li>#}
-                        {#                            <li><i class="fa fa-star"></i></li>#}
-                        {#                            <li><i class="fa fa-star"></i></li>#}
-                        {#                            <li><i class="fa fa-star-o"></i></li>#}
-                        {#                            <li><i class="fa fa-star-o"></i></li>#}
-                        {#                        </ul>#}
-                        {#                    </div>#}
-                    </div>
-                    <div class="rate"></div>
-                    <div class="button">
-                        <a href="" class="fill-blue">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        查看详情</a>
-{#                        <a href="" class="fill-black">#}
-{#                            <i class="fa fa-shopping-cart"#}
-{#                               aria-hidden="true"></i> Add to Cart</a>#}
-                    </div>
-                </div>
-            {% endfor %}
-
-
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li class="active"><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-
+    {% include "banner.html" with title=name name="product" %}
 
 {% endblock %}
 
 
 {% block js %}
-    <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
 
     <script src="static/js/bootstrap.min.js"></script>
@@ -229,3 +149,6 @@
 
     <script src="static/js/custom.js"></script>
 {% endblock %}
+
+
+

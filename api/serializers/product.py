@@ -8,4 +8,12 @@ class OurProductSerizlizers(serializers.ModelSerializer):
     class Meta:
 
         model = OurProduct
-        fields = ('产品名字', '产品描述', '产品属性')+base_fields
+        fields = ('产品名字', '产品描述', '产品属性', '产品分类')+base_fields
+
+
+class OurProductCateSerizlizers(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = OurProductCate
+        fields = ('产品分类', 'name', 'more')

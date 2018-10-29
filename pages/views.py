@@ -9,10 +9,13 @@ from .models import *
 
 def tplt(tp):
     def wrapper(func):
-        def inner(request):
-            params = func(request)
+        def inner(request, **kwargs):
+            # print(kwargs, '+++++++++++++++++=')
+            params = func(request, **kwargs)
             g = GlobalModel.objects.all()[0]
+            cates = OurProductCate.objects.all()
             params['g'] = g
+            params['cates'] = cates
             return render(request, tp, params)
         return inner
     return wrapper
@@ -44,8 +47,9 @@ def service(request):
     return dict(ourGuidancess=ourGuidancess, ourAdvantages=ourAdvantages)
 
 @tplt('product.html')
-def product(request):
-    return dict()
+def product(request, cate):
+    products = OurProduct.objects.filter(产品分类=cate)
+    return dict(cate=cate, products=products)
 
 @tplt('contact.html')
 def contact(request):
@@ -60,3 +64,8 @@ def login(request):
 @tplt('register.html')
 def register(request):
     return dict()
+
+
+@tplt('detail.html')
+def detail(request, name):
+    return dict(name=name)
