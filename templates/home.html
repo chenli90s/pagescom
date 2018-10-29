@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-        <div class="slider">
+    <div class="slider">
         <div id="rev_slider_204_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
              data-alias="fullscreen-button44"
              style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -10,187 +10,191 @@
                  data-version="5.1.1RC">
                 <ul>
                     {% for slider in sliders %}
-                    <li data-index="rs-68{{ slider.id }}" data-transition="zoomin" data-slotamount="default"
-                        data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
-                        data-masterspeed="2000"
-                        data-rotate="0"
-                        data-fstransition="fade"
-                        data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
-                        data-title="{{ slider.口号 }}"
-                        data-description="">
+                        <li data-index="rs-68{{ slider.id }}" data-transition="zoomin"
+                            data-slotamount="default"
+                            data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
+                            data-masterspeed="2000"
+                            data-rotate="0"
+                            data-fstransition="fade"
+                            data-fsmasterspeed="1500" data-fsslotamount="7"
+                            data-saveperformance="off"
+                            data-title="{{ slider.口号 }}"
+                            data-description="">
 
-                        <img src="{{ slider.上传图片 }}" alt="" data-bgposition="center center"
-                             data-kenburns="on"
-                             data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"
-                             data-scaleend="130"
-                             data-rotatestart="0" data-rotateend="0" data-offsetstart="500 100"
-                             data-offsetend="-500 0"
-                             data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <img src="{{ slider.上传图片 }}" alt="" data-bgposition="center center"
+                                 data-kenburns="on"
+                                 data-duration="30000" data-ease="Linear.easeNone"
+                                 data-scalestart="100"
+                                 data-scaleend="130"
+                                 data-rotatestart="0" data-rotateend="0" data-offsetstart="500 100"
+                                 data-offsetend="-500 0"
+                                 data-bgparallax="10" class="rev-slidebg" data-no-retina>
 
 
-                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-                             id="slide-68{{ slider.id }}-layer-bg"
-                             data-x="['right','right','left','left']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"
-                             data-transform_out="x:left;s:1200;e:Power3.easeInOut;s:1200;e:Power3.easeInOut;"
-                             data-start="100" data-responsive_offset="on" style="z-index: 5;"><img
-                                src="static/picture/overlay.png" alt="">
-                        </div>
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
+                                 id="slide-68{{ slider.id }}-layer-bg"
+                                 data-x="['right','right','left','left']"
+                                 data-hoffset="['0','0','0','0']"
+                                 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+                                 data-transform_idle="o:1;"
+                                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"
+                                 data-transform_out="x:left;s:1200;e:Power3.easeInOut;s:1200;e:Power3.easeInOut;"
+                                 data-start="100" data-responsive_offset="on" style="z-index: 5;">
+                                <img
+                                        src="static/picture/overlay.png" alt="">
+                            </div>
 
-                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-1"
-                             id="slide-68{{ slider.id }}-layer-1"
-                             data-x="['left','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['center','center','center','center']"
-                             data-voffset="['-80','-60','-60','-20']"
-                             data-fontsize="['42','42','32','24']"
-                             data-lineheight="['45','45','35','28']" data-width="none"
-                             data-height="none" data-color="#fff" data-whitespace="nowrap"
-                             data-transform_idle="o:1;"
-                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                             data-mask_out="x:inherit;y:inherit;" data-start="1500"
-                             data-splitin="none" data-splitout="none"
-                             data-responsive_offset="on"
-                             style="z-index: 6; white-space: nowrap; text-transform:uppercase; letter-spacing:3px; font-weight:300;">
-                            {{ slider.口号 }}
-                        </div>
+                            <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-1"
+                                 id="slide-68{{ slider.id }}-layer-1"
+                                 data-x="['left','center','center','center']"
+                                 data-hoffset="['0','0','0','0']"
+                                 data-y="['center','center','center','center']"
+                                 data-voffset="['-80','-60','-60','-20']"
+                                 data-fontsize="['42','42','32','24']"
+                                 data-lineheight="['45','45','35','28']" data-width="none"
+                                 data-height="none" data-color="#fff" data-whitespace="nowrap"
+                                 data-transform_idle="o:1;"
+                                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_out="x:inherit;y:inherit;" data-start="1500"
+                                 data-splitin="none" data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 6; white-space: nowrap; text-transform:uppercase; letter-spacing:3px; font-weight:300;">
+                                {{ slider.口号 }}
+                            </div>
 
-                        <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-2"
-                             id="slide-68{{ slider.id }}-layer-2"
-                             data-x="['left','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['center','center','center','center']"
-                             data-voffset="['-10','-10','-10','10']"
-                             data-fontsize="['60','60','50','30']"
-                             data-lineheight="['65','65','45','35']"
-                             data-height="none" data-color="#fff" data-letter-spacing="normal"
-                             data-whitespace="nowrap"
-                             data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
-                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                             data-start="1000" data-splitin="chars"
-                             data-splitout="none" data-elementdelay="0.05"
-                             data-responsive_offset="on"
-                             style="z-index: 6; white-space: nowrap;">{{ slider.响亮口号 }}
-                        </div>
+                            <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-2"
+                                 id="slide-68{{ slider.id }}-layer-2"
+                                 data-x="['left','center','center','center']"
+                                 data-hoffset="['0','0','0','0']"
+                                 data-y="['center','center','center','center']"
+                                 data-voffset="['-10','-10','-10','10']"
+                                 data-fontsize="['60','60','50','30']"
+                                 data-lineheight="['65','65','45','35']"
+                                 data-height="none" data-color="#fff" data-letter-spacing="normal"
+                                 data-whitespace="nowrap"
+                                 data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                 data-start="1000" data-splitin="chars"
+                                 data-splitout="none" data-elementdelay="0.05"
+                                 data-responsive_offset="on"
+                                 style="z-index: 6; white-space: nowrap;">{{ slider.响亮口号 }}
+                            </div>
 
-                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-3"
-                             id="slide-68{{ slider.id }}-layer-3"
-                             data-x="['left','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['center','center','center','center']"
-                             data-voffset="['30','50','50','50']"
-                             data-fontsize="['16','16','16','14']"
-                             data-lineheight="['18','18','18','18']"
-                             data-width="['650','450','450','300']" data-height="none"
-                             data-color="#fff"
-                             data-whitespace="normal" data-transform_idle="o:1;"
-                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                             data-mask_out="x:inherit;y:inherit;" data-start="2500"
-                             data-splitin="none" data-splitout="none"
-                             data-responsive_offset="on"
-                             style="z-index: 6; min-width: 300px; max-width: 650px; white-space: normal; font-weight:300;">
-                            {{ slider.使命 }}
-                        </div>
-                    </li>
+                            <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-3"
+                                 id="slide-68{{ slider.id }}-layer-3"
+                                 data-x="['left','center','center','center']"
+                                 data-hoffset="['0','0','0','0']"
+                                 data-y="['center','center','center','center']"
+                                 data-voffset="['30','50','50','50']"
+                                 data-fontsize="['16','16','16','14']"
+                                 data-lineheight="['18','18','18','18']"
+                                 data-width="['650','450','450','300']" data-height="none"
+                                 data-color="#fff"
+                                 data-whitespace="normal" data-transform_idle="o:1;"
+                                 data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                 data-mask_out="x:inherit;y:inherit;" data-start="2500"
+                                 data-splitin="none" data-splitout="none"
+                                 data-responsive_offset="on"
+                                 style="z-index: 6; min-width: 300px; max-width: 650px; white-space: normal; font-weight:300;">
+                                {{ slider.使命 }}
+                            </div>
+                        </li>
                     {% endfor %}
 
-{#                    <li data-index="rs-682" data-transition="zoomin" data-slotamount="default"#}
-{#                        data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"#}
-{#                        data-masterspeed="2000"#}
-{#                        data-rotate="0"#}
-{#                        data-fstransition="fade"#}
-{#                        data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"#}
-{#                        data-title="Land Transport"#}
-{#                        data-description="">#}
-{##}
-{#                        <img src="static/picture/2.jpg" alt="" data-bgposition="center center"#}
-{#                             data-kenburns="on"#}
-{#                             data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"#}
-{#                             data-scaleend="130"#}
-{#                             data-rotatestart="0" data-rotateend="0" data-offsetstart="-500 0"#}
-{#                             data-offsetend="500 100"#}
-{#                             data-bgparallax="10" class="rev-slidebg" data-no-retina>#}
-{##}
-{##}
-{#                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"#}
-{#                             id="slide-682-layer-bg"#}
-{#                             data-x="['right','right','left','left']"#}
-{#                             data-hoffset="['0','0','0','0']"#}
-{#                             data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"#}
-{#                             data-transform_idle="o:1;"#}
-{#                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"#}
-{#                             data-transform_out="x:left;s:1200;e:Power3.easeInOut;s:1200;e:Power3.easeInOut;"#}
-{#                             data-start="100" data-responsive_offset="on" style="z-index: 5;"><img#}
-{#                                src="static/picture/overlay.png" alt="">#}
-{#                        </div>#}
-{##}
-{#                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-1"#}
-{#                             id="slide-682-layer-1"#}
-{#                             data-x="['left','center','center','center']"#}
-{#                             data-hoffset="['0','0','0','0']"#}
-{#                             data-y="['center','center','center','center']"#}
-{#                             data-voffset="['-80','-60','-60','-20']"#}
-{#                             data-fontsize="['42','42','32','24']"#}
-{#                             data-lineheight="['45','45','35','28']" data-width="none"#}
-{#                             data-height="none" data-color="#fff" data-whitespace="nowrap"#}
-{#                             data-transform_idle="o:1;"#}
-{#                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"#}
-{#                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"#}
-{#                             data-mask_out="x:inherit;y:inherit;" data-start="1500"#}
-{#                             data-splitin="none" data-splitout="none"#}
-{#                             data-responsive_offset="on"#}
-{#                             style="z-index: 6; white-space: nowrap; text-transform:uppercase; letter-spacing:3px; font-weight:300;">#}
-{#                            WE DELIVER#}
-{#                        </div>#}
-{##}
-{#                        <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-2"#}
-{#                             id="slide-682-layer-2"#}
-{#                             data-x="['left','center','center','center']"#}
-{#                             data-hoffset="['0','0','0','0']"#}
-{#                             data-y="['center','center','center','center']"#}
-{#                             data-voffset="['-10','-10','-10','10']"#}
-{#                             data-fontsize="['60','60','50','30']"#}
-{#                             data-lineheight="['65','65','45','35']"#}
-{#                             data-height="none" data-color="#fff" data-letter-spacing="normal"#}
-{#                             data-whitespace="nowrap"#}
-{#                             data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"#}
-{#                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"#}
-{#                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"#}
-{#                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"#}
-{#                             data-start="1000" data-splitin="chars"#}
-{#                             data-splitout="none" data-elementdelay="0.05"#}
-{#                             data-responsive_offset="on"#}
-{#                             style="z-index: 6; white-space: nowrap;">CARGO WORLDWIDE#}
-{#                        </div>#}
-{##}
-{#                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-3"#}
-{#                             id="slide-682-layer-3"#}
-{#                             data-x="['left','center','center','center']"#}
-{#                             data-hoffset="['0','0','0','0']"#}
-{#                             data-y="['center','center','center','center']"#}
-{#                             data-voffset="['20','50','50','50']"#}
-{#                             data-fontsize="['16','16','16','14']"#}
-{#                             data-lineheight="['18','18','18','18']"#}
-{#                             data-width="['650','450','450','300']" data-height="none"#}
-{#                             data-color="#fff"#}
-{#                             data-whitespace="normal" data-transform_idle="o:1;"#}
-{#                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"#}
-{#                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"#}
-{#                             data-mask_out="x:inherit;y:inherit;" data-start="2500"#}
-{#                             data-splitin="none" data-splitout="none"#}
-{#                             data-responsive_offset="on"#}
-{#                             style="z-index: 6; min-width: 300px; max-width: 650px; white-space: normal; font-weight:300;">#}
-{#                            Go beyond logistics, make the world go round and more forrevolution#}
-{#                            business.#}
-{#                        </div>#}
-{#                    </li>#}
+                    {#                    <li data-index="rs-682" data-transition="zoomin" data-slotamount="default"#}
+                    {#                        data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"#}
+                    {#                        data-masterspeed="2000"#}
+                    {#                        data-rotate="0"#}
+                    {#                        data-fstransition="fade"#}
+                    {#                        data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"#}
+                    {#                        data-title="Land Transport"#}
+                    {#                        data-description="">#}
+                    {##}
+                    {#                        <img src="static/picture/2.jpg" alt="" data-bgposition="center center"#}
+                    {#                             data-kenburns="on"#}
+                    {#                             data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100"#}
+                    {#                             data-scaleend="130"#}
+                    {#                             data-rotatestart="0" data-rotateend="0" data-offsetstart="-500 0"#}
+                    {#                             data-offsetend="500 100"#}
+                    {#                             data-bgparallax="10" class="rev-slidebg" data-no-retina>#}
+                    {##}
+                    {##}
+                    {#                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"#}
+                    {#                             id="slide-682-layer-bg"#}
+                    {#                             data-x="['right','right','left','left']"#}
+                    {#                             data-hoffset="['0','0','0','0']"#}
+                    {#                             data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"#}
+                    {#                             data-transform_idle="o:1;"#}
+                    {#                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;"#}
+                    {#                             data-transform_out="x:left;s:1200;e:Power3.easeInOut;s:1200;e:Power3.easeInOut;"#}
+                    {#                             data-start="100" data-responsive_offset="on" style="z-index: 5;"><img#}
+                    {#                                src="static/picture/overlay.png" alt="">#}
+                    {#                        </div>#}
+                    {##}
+                    {#                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-1"#}
+                    {#                             id="slide-682-layer-1"#}
+                    {#                             data-x="['left','center','center','center']"#}
+                    {#                             data-hoffset="['0','0','0','0']"#}
+                    {#                             data-y="['center','center','center','center']"#}
+                    {#                             data-voffset="['-80','-60','-60','-20']"#}
+                    {#                             data-fontsize="['42','42','32','24']"#}
+                    {#                             data-lineheight="['45','45','35','28']" data-width="none"#}
+                    {#                             data-height="none" data-color="#fff" data-whitespace="nowrap"#}
+                    {#                             data-transform_idle="o:1;"#}
+                    {#                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"#}
+                    {#                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"#}
+                    {#                             data-mask_out="x:inherit;y:inherit;" data-start="1500"#}
+                    {#                             data-splitin="none" data-splitout="none"#}
+                    {#                             data-responsive_offset="on"#}
+                    {#                             style="z-index: 6; white-space: nowrap; text-transform:uppercase; letter-spacing:3px; font-weight:300;">#}
+                    {#                            WE DELIVER#}
+                    {#                        </div>#}
+                    {##}
+                    {#                        <div class="tp-caption NotGeneric-Title tp-resizeme rs-parallaxlevel-2"#}
+                    {#                             id="slide-682-layer-2"#}
+                    {#                             data-x="['left','center','center','center']"#}
+                    {#                             data-hoffset="['0','0','0','0']"#}
+                    {#                             data-y="['center','center','center','center']"#}
+                    {#                             data-voffset="['-10','-10','-10','10']"#}
+                    {#                             data-fontsize="['60','60','50','30']"#}
+                    {#                             data-lineheight="['65','65','45','35']"#}
+                    {#                             data-height="none" data-color="#fff" data-letter-spacing="normal"#}
+                    {#                             data-whitespace="nowrap"#}
+                    {#                             data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;"#}
+                    {#                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"#}
+                    {#                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"#}
+                    {#                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"#}
+                    {#                             data-start="1000" data-splitin="chars"#}
+                    {#                             data-splitout="none" data-elementdelay="0.05"#}
+                    {#                             data-responsive_offset="on"#}
+                    {#                             style="z-index: 6; white-space: nowrap;">CARGO WORLDWIDE#}
+                    {#                        </div>#}
+                    {##}
+                    {#                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme rs-parallaxlevel-3"#}
+                    {#                             id="slide-682-layer-3"#}
+                    {#                             data-x="['left','center','center','center']"#}
+                    {#                             data-hoffset="['0','0','0','0']"#}
+                    {#                             data-y="['center','center','center','center']"#}
+                    {#                             data-voffset="['20','50','50','50']"#}
+                    {#                             data-fontsize="['16','16','16','14']"#}
+                    {#                             data-lineheight="['18','18','18','18']"#}
+                    {#                             data-width="['650','450','450','300']" data-height="none"#}
+                    {#                             data-color="#fff"#}
+                    {#                             data-whitespace="normal" data-transform_idle="o:1;"#}
+                    {#                             data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"#}
+                    {#                             data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"#}
+                    {#                             data-mask_out="x:inherit;y:inherit;" data-start="2500"#}
+                    {#                             data-splitin="none" data-splitout="none"#}
+                    {#                             data-responsive_offset="on"#}
+                    {#                             style="z-index: 6; min-width: 300px; max-width: 650px; white-space: normal; font-weight:300;">#}
+                    {#                            Go beyond logistics, make the world go round and more forrevolution#}
+                    {#                            business.#}
+                    {#                        </div>#}
+                    {#                    </li>#}
 
                 </ul>
                 <div class="tp-bannertimer"
@@ -207,7 +211,7 @@
                 <div class="col-lg-12">
                     <div class="hero-text center">
                         <h1>我们的服务</h1>
-{#                        <h2>口号</h2>#}
+                        {#                        <h2>口号</h2>#}
                         <div class="line"></div>
                     </div>
                 </div>
@@ -218,42 +222,42 @@
                 <div class="col-lg-12">
                     <div class="home-our-services-carousel">
                         {% for service in services %}
-                        <div class="block">
-                            <div class="picture">
-                                <div class="top-overlay"></div>
-                                <img src="{{ service.上传图片 }}"
-                                     class="img-responsive"
-                                     alt="">
-                                <div class="bottom-overlay"></div>
+                            <div class="block">
+                                <div class="picture">
+                                    <div class="top-overlay"></div>
+                                    <img src="{{ service.上传图片 }}"
+                                         class="img-responsive"
+                                         alt="">
+                                    <div class="bottom-overlay"></div>
+                                </div>
+                                <div class="contents">
+                                    <h1>{{ service.服务类型 }}</h1>
+                                    <div class="line"></div>
+                                    <div class="description">{{ service.服务描述 }}</div>
+                                </div>
                             </div>
-                            <div class="contents">
-                                <h1>{{ service.服务类型 }}</h1>
-                                <div class="line"></div>
-                                <div class="description">{{ service.服务描述 }}</div>
-                            </div>
-                        </div>
                         {% endfor %}
-                        
 
-{#                        <div class="block">#}
-{#                            <div class="picture">#}
-{#                                <div class="top-overlay"></div>#}
-{#                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"#}
-{#                                     class="img-responsive"#}
-{#                                     alt="">#}
-{#                                <div class="bottom-overlay"><img#}
-{#                                        src="static/picture/overlay-bottom.png"#}
-{#                                        class="img-responsive" alt=""></div>#}
-{#                            </div>#}
-{#                            <div class="contents">#}
-{#                                <h1>Cargo Management</h1>#}
-{#                                <div class="line"></div>#}
-{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
-{#                                    elit, sed do eiusmod#}
-{#                                    tempor for enim adesg minim veniam.#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
+
+                        {#                        <div class="block">#}
+                        {#                            <div class="picture">#}
+                        {#                                <div class="top-overlay"></div>#}
+                        {#                                <img src="static/picture/f01b295f822648328ea415e28e4d7ea5.gif"#}
+                        {#                                     class="img-responsive"#}
+                        {#                                     alt="">#}
+                        {#                                <div class="bottom-overlay"><img#}
+                        {#                                        src="static/picture/overlay-bottom.png"#}
+                        {#                                        class="img-responsive" alt=""></div>#}
+                        {#                            </div>#}
+                        {#                            <div class="contents">#}
+                        {#                                <h1>Cargo Management</h1>#}
+                        {#                                <div class="line"></div>#}
+                        {#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+                        {#                                    elit, sed do eiusmod#}
+                        {#                                    tempor for enim adesg minim veniam.#}
+                        {#                                </div>#}
+                        {#                            </div>#}
+                        {#                        </div>#}
 
                     </div>
                 </div>
@@ -278,58 +282,58 @@
                         src="static/picture/9567f7434bc747c0b45771ae9ba7b5d7.gif"
                         class="img-responsive center-block" alt=""></div>
                 <div class="col-lg-6 col-md-6">
-{#                    <div class="description">但在某些情况下和责任或义务，看看拉赫快乐合理遇到是通过建立保护创建期货极为痛苦MES的后果。#}
-{#                    </div>#}
+                    {#                    <div class="description">但在某些情况下和责任或义务，看看拉赫快乐合理遇到是通过建立保护创建期货极为痛苦MES的后果。#}
+                    {#                    </div>#}
                     <div class="row">
 
                         {% for choiceu in choiceus %}
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="block">
-                                <div class="icon"><span class="icon-warehouse"></span></div>
-                                <h1>为什么好</h1>
-                                <div class="description">理由描述
+                                <div class="block">
+                                    <div class="icon"><span class={{ choiceu.图标 }}></span></div>
+                                    <h1>{{ choiceu.选择原因标题 }}</h1>
+                                    <div class="description">{{ choiceu.选择原因 }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         {% endfor %}
 
 
 
 
-{#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
-{#                            <div class="block">#}
-{#                                <div class="icon"><span class="icon-truck22"></span></div>#}
-{#                                <h1>Goods Packaging</h1>#}
-{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
-{#                                    elit, sed do eiusmod#}
-{#                                    tempor for enim adesg ens minim veniam.#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{##}
-{##}
-{#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
-{#                            <div class="block">#}
-{#                                <div class="icon"><span class="icon-ship"></span></div>#}
-{#                                <h1>Goods Packaging</h1>#}
-{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
-{#                                    elit, sed do eiusmod#}
-{#                                    tempor for enim adesg ens minim veniam.#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
-{##}
-{##}
-{#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
-{#                            <div class="block">#}
-{#                                <div class="icon"><span class="icon-security"></span></div>#}
-{#                                <h1>Goods Packaging</h1>#}
-{#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
-{#                                    elit, sed do eiusmod#}
-{#                                    tempor for enim adesg ens minim veniam.#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
+                        {#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
+                        {#                            <div class="block">#}
+                        {#                                <div class="icon"><span class="icon-truck22"></span></div>#}
+                        {#                                <h1>Goods Packaging</h1>#}
+                        {#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+                        {#                                    elit, sed do eiusmod#}
+                        {#                                    tempor for enim adesg ens minim veniam.#}
+                        {#                                </div>#}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                        {##}
+                        {##}
+                        {#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
+                        {#                            <div class="block">#}
+                        {#                                <div class="icon"><span class="icon-ship"></span></div>#}
+                        {#                                <h1>Goods Packaging</h1>#}
+                        {#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+                        {#                                    elit, sed do eiusmod#}
+                        {#                                    tempor for enim adesg ens minim veniam.#}
+                        {#                                </div>#}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                        {##}
+                        {##}
+                        {#                        <div class="col-lg-6 col-md-6 col-sm-6">#}
+                        {#                            <div class="block">#}
+                        {#                                <div class="icon"><span class="icon-security"></span></div>#}
+                        {#                                <h1>Goods Packaging</h1>#}
+                        {#                                <div class="description">Lorem ipsum dolor sit , consectet adipisi#}
+                        {#                                    elit, sed do eiusmod#}
+                        {#                                    tempor for enim adesg ens minim veniam.#}
+                        {#                                </div>#}
+                        {#                            </div>#}
+                        {#                        </div>#}
 
                     </div>
                 </div>
@@ -392,71 +396,26 @@
                 </div>
             </div>
             <div class="row">
-
-                <div class="col-lg-4 col-md-4">
-                    <div class="post">
-                        <div class="picture">
-                            <a href=""><img
-                                    src="static/picture/e730bc57049f45579f27189cf0b709f7.gif"
-                                    class="img-responsive center-block" alt=""></a>
-                            <div class="info">
-                                <div class="category"><i class="fa fa-picture-o"
-                                                         aria-hidden="true"></i></div>
-                                <div class="date">18 Jan, 2016</div>
+                {% for ns in news %}
+                    <div class="col-lg-4 col-md-4">
+                        <div class="post">
+                            <div class="picture">
+                                <a href=""><img
+                                        src="{{ ns.上传图片 }}"
+                                        class="img-responsive center-block" alt=""></a>
+                                <div class="info">
+                                    <div class="category"><i class="fa fa-picture-o"
+                                                             aria-hidden="true"></i></div>
+                                    <div class="date">{{ ns.时间 }}</div>
+                                </div>
+                            </div>
+                            <h1><a href="">{{ ns.消息标题 }}</a></h1>
+                            <div class="description">
+                                {{ ns.消息内容 }}
                             </div>
                         </div>
-                        <h1><a href="">Possibility in every direction</a></h1>
-                        <div class="description">Lorem ipsum dolor sit , consectet adipisi elit, sed
-                            do eiusmod tempor for
-                            enim adesg ens minim veniam ipsum consectet adipisi elit, sed do minim
-                            veniam..
-                        </div>
                     </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-4">
-                    <div class="post">
-                        <div class="picture">
-                            <a href=""><img
-                                    src="static/picture/e730bc57049f45579f27189cf0b709f7.gif"
-                                    class="img-responsive center-block" alt=""></a>
-                            <div class="info">
-                                <div class="category"><i class="fa fa-volume-up"
-                                                         aria-hidden="true"></i></div>
-                                <div class="date">18 Jan, 2016</div>
-                            </div>
-                        </div>
-                        <h1><a href="">Not the average freight fowarder</a></h1>
-                        <div class="description">Lorem ipsum dolor sit , consectet adipisi elit, sed
-                            do eiusmod tempor for
-                            enim adesg ens minim veniam ipsum consectet adipisi elit, sed do minim
-                            veniam..
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-4">
-                    <div class="post">
-                        <div class="picture">
-                            <a href=""><img
-                                    src="static/picture/e730bc57049f45579f27189cf0b709f7.gif"
-                                    class="img-responsive center-block" alt=""></a>
-                            <div class="info">
-                                <div class="category"><i class="fa fa-video-camera"
-                                                         aria-hidden="true"></i></div>
-                                <div class="date">18 Jan, 2016</div>
-                            </div>
-                        </div>
-                        <h1><a href="">Great voyages start here</a></h1>
-                        <div class="description">Lorem ipsum dolor sit , consectet adipisi elit, sed
-                            do eiusmod tempor for
-                            enim adesg ens minim veniam ipsum consectet adipisi elit, sed do minim
-                            veniam..
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
         </div>
@@ -478,46 +437,18 @@
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="testimonial-carousel">
 
-                        <div>
-                            <div class="picture"><img
-                                    src="static/picture/c8895e67ced34f71b0abf445962a72fc.gif"
-                                    class="img-circle center-block" alt=""></div>
-                            <div class="name">Fatma Hassan</div>
-                            <div class="company">CEO - Cloud</div>
-                            <div class="description">Imagination… What we can easily see is only a
-                                small percentage of what
-                                is possible. Logistics through innovation, dedication, and
-                                technology.
+                        {% for comment in comments %}
+                            <div>
+                                <div class="picture"><img
+                                        src="{{ comment.上传图片 }}"
+                                        class="img-circle center-block" alt=""></div>
+                                <div class="name">{{ comment.客户姓名 }}</div>
+                                <div class="company">{{ comment.客户职位 }}</div>
+                                <div class="description">
+                                    {{ comment.客户描述 }}
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div>
-                            <div class="picture"><img
-                                    src="static/picture/c8895e67ced34f71b0abf445962a72fc.gif"
-                                    class="img-circle center-block" alt=""></div>
-                            <div class="name">Fatma Hassan</div>
-                            <div class="company">CEO - Cloud</div>
-                            <div class="description">Imagination… What we can easily see is only a
-                                small percentage of what
-                                is possible. Logistics through innovation, dedication, and
-                                technology.
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="picture"><img
-                                    src="static/picture/c8895e67ced34f71b0abf445962a72fc.gif"
-                                    class="img-circle center-block" alt=""></div>
-                            <div class="name">Fatma Hassan</div>
-                            <div class="company">CEO - Cloud</div>
-                            <div class="description">Imagination… What we can easily see is only a
-                                small percentage of what
-                                is possible. Logistics through innovation, dedication, and
-                                technology.
-                            </div>
-                        </div>
+                        {% endfor %}
 
                     </div>
                 </div>
@@ -529,26 +460,14 @@
     <div class="clients">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <img src="static/picture/e43066d46f6240d9a39b877a05017f5f.gif"
-                         class="img-responsive center-block"
-                         alt="">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <img src="static/picture/e43066d46f6240d9a39b877a05017f5f.gif"
-                         class="img-responsive center-block"
-                         alt="">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <img src="static/picture/e43066d46f6240d9a39b877a05017f5f.gif"
-                         class="img-responsive center-block"
-                         alt="">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <img src="static/picture/e43066d46f6240d9a39b877a05017f5f.gif"
-                         class="img-responsive center-block"
-                         alt="">
-                </div>
+                {% for client in clients%}
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <img src="{{ client.上传图片 }}"
+                             class="img-responsive center-block"
+                             alt="">
+                    </div>
+                {% endfor %}
+
             </div>
         </div>
     </div>

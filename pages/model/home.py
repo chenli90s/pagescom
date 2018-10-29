@@ -33,6 +33,7 @@ class Choiceus(BaseModel):
 
     more = True
 
+    图标 = models.CharField(max_length=255)
     选择原因 = models.CharField(max_length=255)
     选择原因标题 = models.CharField(max_length=255)
 
@@ -45,6 +46,7 @@ class News(BaseModel):
 
     消息内容 = models.CharField(max_length=255)
     消息标题 = models.CharField(max_length=255)
+    时间 = models.CharField(max_length=255)
 
 
 class Comment(BaseModel):

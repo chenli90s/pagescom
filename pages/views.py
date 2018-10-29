@@ -26,7 +26,8 @@ def home():
     choiceus = Choiceus.objects.all()
     news = News.objects.all()
     comment = Comment.objects.all()
-    return dict(sliders=sliders, services=service, choiceus=choiceus, news=news, comment=comment)
+    clients = Clients.objects.all()
+    return dict(sliders=sliders, services=service, choiceus=choiceus, news=news, comments=comment, clients=clients)
 
 
 def about(request):

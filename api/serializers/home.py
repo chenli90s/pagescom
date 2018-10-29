@@ -23,14 +23,14 @@ class ChoiceusSerizlizers(serializers.ModelSerializer):
     class Meta:
 
         model = Choiceus
-        fields = ('选择原因', '选择原因标题')+base_fields
+        fields = ('选择原因', '选择原因标题', '图标')+base_fields
 
 class NewsSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
         model = News
-        fields = ('消息内容', '消息标题')+base_fields
+        fields = ('消息内容', '消息标题', '时间')+base_fields
 
 
 class CommentSerizlizers(serializers.ModelSerializer):
@@ -38,7 +38,7 @@ class CommentSerizlizers(serializers.ModelSerializer):
     class Meta:
 
         model = Comment
-        fields = ('客户头像', '客户姓名', '客户职位', '客户描述')+base_fields
+        fields = ('上传图片', '客户姓名', '客户职位', '客户描述')+base_fields
 
 
 class ClientsSerizlizers(serializers.ModelSerializer):
