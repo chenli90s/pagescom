@@ -8,3 +8,10 @@ class ContactsViewSet(viewsets.ModelViewSet):
     queryset = Contacts.objects.all()
     serializer_class = ContactsSerizlizers
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+
+
+class MapsViewSet(viewsets.ModelViewSet):
+
+    queryset = Maps.objects.all()
+    serializer_class = MapsSerizlizers
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)

@@ -9,7 +9,7 @@ class OurGuidancesSerizlizers(serializers.ModelSerializer):
     class Meta:
 
         model = OurGuidances
-        fields = ('服务类型', '指导描述')+base_fields
+        fields = ('服务类型', '指导描述', '图标')+base_fields
 
 
 class OurAdvantageSerizlizers(serializers.ModelSerializer):

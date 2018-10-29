@@ -8,7 +8,13 @@ class ContactsSerizlizers(serializers.ModelSerializer):
     class Meta:
 
         model = Contacts
-        fields = ('公司地址', '电话号码', '电子邮件')+base_fields
+        fields = ('公司地址', '电话号码', '电子邮件', '信息描述')+base_fields
+
+class MapsSerizlizers(serializers.ModelSerializer):
+
+    class Meta:
+        model = Maps
+        fields = ('分享链接', ) + base_fields
 
 
 

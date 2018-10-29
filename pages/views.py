@@ -10,7 +10,7 @@ from .models import *
 def tplt(tp):
     def wrapper(func):
         def inner(request):
-            params = func()
+            params = func(request)
             g = GlobalModel.objects.all()[0]
             params['g'] = g
             return render(request, tp, params)
@@ -20,7 +20,7 @@ def tplt(tp):
 
 # Create your views here.
 @tplt('home.html')
-def home():
+def home(request):
     sliders = Slider.objects.all()
     service = OurService.objects.all()
     choiceus = Choiceus.objects.all()
@@ -37,18 +37,26 @@ def about(request):
     ourPartners = OurPartners.objects.all()
     return dict(ourGuidances=ourGuidances, ourGoods=ourGoods, ourTeams=ourTeams, ourPartners=ourPartners)
 
-
+@tplt("service.html")
 def service(request):
-    return render(request, "service.html")
+    ourGuidancess = OurGuidances.objects.all()
+    ourAdvantages = OurAdvantage.objects.all()
+    return dict(ourGuidancess=ourGuidancess, ourAdvantages=ourAdvantages)
 
+@tplt('product.html')
 def product(request):
-    return render(request, 'product.html')
+    return dict()
 
+@tplt('contact.html')
 def contact(request):
-    return render(request, 'contact.html')
+    contacts = Contacts.objects.all()
+    maps = Maps.objects.all()
+    return dict(contacts=contacts, maps=maps)
 
+@tplt('login.html')
 def login(request):
-    return render(request, 'login.html')
+    return dict()
 
+@tplt('register.html')
 def register(request):
-    return render(request, 'register.html')
+    return dict()

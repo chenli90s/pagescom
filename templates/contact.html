@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="info">
-                            <h1>Contact Us</h1>
+                            <h1>联系我们</h1>
                             <h2>Go beyond logistics, make the revolution business.</h2>
                         </div>
                     </div>
@@ -18,8 +18,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ol class="breadcrumb">
-                                <li><a href="">Home</a></li>
-                                <li class="active">Contact us</li>
+                                <li><a href="home">主页</a></li>
+                                <li class="active">联系我们</li>
                             </ol>
                         </div>
                     </div>
@@ -34,17 +34,14 @@
         <div class="container">
             <div class="row our-information">
                 <div class="col-lg-12">
-                    <h1>Our Information</h1>
+                    <h1>我们的信息</h1>
                     <div class="line"></div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="description">Temporibus autem quibusdam et aut officiis
-                                debitis
-                                is aut rerum necessitatibus saepes eveniet ut et seo lage voluptates
-                                repudiandae sint et molestiae non mes for Creating futures through
-                                building preservation.
+                            <div class="description">
+                                {{ contacts.0.信息描述 }}
                             </div>
                             <div class="row">
 
@@ -53,12 +50,8 @@
                                         <div class="icon"><i class="fa fa-map-marker"
                                                              aria-hidden="true"></i></div>
                                         <div class="details">
-                                            <h1>Head Office</h1>
-                                            <div class="description">Lorem ipsum dolor sit ,
-                                                consectet
-                                                adipisi elit, sed do eiusmod tempor for enim adesg
-                                                ens
-                                                minim veniam.
+                                            <h1>公司地址</h1>
+                                            <div class="description">{{ contacts.0.公司地址 }}
                                             </div>
                                         </div>
                                     </div>
@@ -71,12 +64,9 @@
                                                              aria-hidden="true"></i>
                                         </div>
                                         <div class="details">
-                                            <h1>Phone Numbers</h1>
-                                            <div class="description">Lorem ipsum dolor sit ,
-                                                consectet
-                                                adipisi elit, sed do eiusmod tempor for enim adesg
-                                                ens
-                                                minim veniam.
+                                            <h1>电话号码</h1>
+                                            <div class="description">
+                                                {{ contacts.0.电话号码 }}
                                             </div>
                                         </div>
                                     </div>
@@ -88,12 +78,9 @@
                                         <div class="icon"><i class="fa fa-envelope"
                                                              aria-hidden="true"></i></div>
                                         <div class="details">
-                                            <h1>E-mail Address</h1>
-                                            <div class="description">Lorem ipsum dolor sit ,
-                                                consectet
-                                                adipisi elit, sed do eiusmod tempor for enim adesg
-                                                ens
-                                                minim veniam.
+                                            <h1>电子邮件</h1>
+                                            <div class="description">
+                                                {{ contacts.0.电子邮件 }}
                                             </div>
                                         </div>
                                     </div>
@@ -104,7 +91,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6"><img
-                        src="static/picture/7bfead0956d944b0b33a3a047c42521b.gif"
+                        src="{{ contacts.0.上传地址 }}"
                         class="img-responsive center-block" alt=""></div>
             </div>
         </div>
@@ -113,7 +100,7 @@
         <div class="container-fluid">
             <div class="row no-gutter-12">
                 <div class="col-lg-12 maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25215.625657884106!2d144.956637!3d-37.81456500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4e793770d3%3A0x9e44d6ad0d76ba7c!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sus!4v1435061406583"
+                    <iframe src="{{ maps.0.分享链接 }}"
                             height="400" allowfullscreen></iframe>
                 </div>
             </div>
@@ -123,37 +110,37 @@
         <div class="container">
             <div class="row send-message">
                 <div class="col-lg-12">
-                    <h1>Send an Message</h1>
+                    <h1>发送消息</h1>
                     <div class="line"></div>
                     <form action='process.php' method='post' name='ContactForm' id='ContactForm'>
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="name"
-                                           placeholder="Full Name *">
+                                           placeholder="全名 *">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="form-group">
                                     <input type="email" class="form-control" name="email"
-                                           placeholder="Email *">
+                                           placeholder="邮件 *">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="website"
-                                           placeholder="Website">
+                                           placeholder="网站">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
                                 <textarea rows="5" class="form-control" name="comment"
-                                          placeholder="Your Message *"></textarea>
+                                          placeholder="你的消息 *"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div id='message_post'></div>
-                                <input class="btn btn-default" type='submit' value='SUBMIT'
+                                <input class="btn btn-default" type='submit' value='提交'
                                        name='submitf' id="submitf">
                             </div>
                         </div>

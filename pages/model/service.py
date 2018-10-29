@@ -7,6 +7,7 @@ class OurGuidances(BaseModel):
 
     more = True
 
+    图标 = models.CharField(max_length=255)
     服务类型 = models.CharField(max_length=255)
     指导描述 = models.CharField(max_length=255)
 
