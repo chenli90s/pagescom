@@ -8,7 +8,7 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         """
         Return `True` if permission is granted, `False` otherwise.
         """
-        # print(request)
+        print(request)
         return True
 
     def has_object_permission(self, request, view, obj):

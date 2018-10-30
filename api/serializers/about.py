@@ -16,14 +16,14 @@ class OurGoodSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
-        model = OurGuidance
+        model = OurGood
         fields = ('擅长的领域描述', '擅长的领域分类')+base_fields
 
 class OurTeamSerizlizers(serializers.ModelSerializer):
 
     class Meta:
 
-        model = OurGuidance
+        model = OurTeam
         fields = ('团队人员姓名', '团队人员职位')+base_fields
 
 class OurPartnersSerizlizers(serializers.ModelSerializer):

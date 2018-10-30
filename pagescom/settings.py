@@ -24,7 +24,7 @@ SECRET_KEY = '7z00eb&k^r0rr@jfy)d*cu1db0mx5tnjj3sb68&pso_cot!wrv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages',
     'rest_framework',
-    'corsheaders',
     'rest_framework.authtoken',
+    'corsheaders',
+
 ]
 
 MIDDLEWARE = [
@@ -73,7 +74,7 @@ CORS_ALLOW_HEADERS = (
     'XMLHttpRequest',
     'X_FILENAME',
     'accept-encoding',
-    'authorization',
+    'Authorization',
     'content-type',
     'dnt',
     'origin',
@@ -93,12 +94,14 @@ JWT_AUTH = {
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-        # 'rest_framework.authentication.BasicAuthentication',
-        # 'rest_framework.authentication.SessionAuthentication',
-        # "rest_framework_jwt.authentication.JSONWebTokenAuthentication",
-    ]
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ),
 }
 
 ROOT_URLCONF = 'pagescom.urls'
