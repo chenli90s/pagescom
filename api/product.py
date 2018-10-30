@@ -7,6 +7,8 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 class OurProductViewSet(viewsets.ModelViewSet):
 
+
+    __doc__ = OurProduct.name
     queryset = OurProduct.objects.all()
     serializer_class = OurProductSerizlizers
     # permission_classes = (IsOwnerOrReadOnly, )
@@ -14,7 +16,7 @@ class OurProductViewSet(viewsets.ModelViewSet):
 
 class OurProductCateViewSet(viewsets.ModelViewSet):
 
-
+    __doc__ = OurProductCate.name
     queryset = OurProductCate.objects.all()
     serializer_class = OurProductCateSerizlizers
     # permission_classes = (IsOwnerOrReadOnly, )

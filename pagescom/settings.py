@@ -88,7 +88,7 @@ CORS_ALLOW_HEADERS = (
 import datetime
 
 JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=300),
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
 }
 
 REST_FRAMEWORK = {

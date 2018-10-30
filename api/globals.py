@@ -7,6 +7,7 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 class GlobalsViewSet(viewsets.ModelViewSet):
 
+    __doc__ = GlobalModel.name
     queryset = GlobalModel.objects.all()
     serializer_class = GlobalSerizlizers
     # permission_classes = ( IsOwnerOrReadOnly, )
