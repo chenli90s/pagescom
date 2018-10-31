@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from pages.model.contact import *
 
-base_fields = ('id', '是否展示', '上传图片', 'name', 'more')
+base_fields = ('id', '是否展示', 'name', 'more')
 
 class ContactsSerizlizers(serializers.ModelSerializer):
 
