@@ -6,7 +6,7 @@ class Slider(BaseModel):
     # 模块名称
     name = "轮播图"
     # 该模块里面是否多个条目
-    more = False
+    more = True
 
     口号 = models.CharField(max_length=255)
 

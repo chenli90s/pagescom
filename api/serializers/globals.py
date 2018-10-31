@@ -15,8 +15,9 @@ class GlobalSerizlizers(serializers.ModelSerializer):
                   '电话',
                   '手机',
                   '关于我们',
-                  '微信',
-                  '微博',
-                  'QQ',
-                  '淘宝',
+                  # '微信',
+                  # '微博',
+                  # 'QQ',
+                  # '淘宝',
+                  'id',
                   )
