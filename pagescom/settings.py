@@ -82,7 +82,9 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
     'Pragma',
-    'token'
+    'token',
+    'Access-Control-Allow-Headers',
+    'X-File-Name',
 )
 
 import datetime

@@ -55,6 +55,7 @@ router.register('globals', GlobalsViewSet)
 
 
 from rest_framework_jwt.views import obtain_jwt_token
+from api.upload import upload
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -62,4 +63,5 @@ urlpatterns = [
     path(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('', include('pages.urls')),
     path(r'api-token-auth/', obtain_jwt_token),
+    path(r'api/upload', upload),
 ]
