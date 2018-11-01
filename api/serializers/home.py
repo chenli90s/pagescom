@@ -44,7 +44,7 @@ class CommentSerizlizers(serializers.ModelSerializer):
 class ClientsSerizlizers(serializers.ModelSerializer):
 
     class Meta:
-        model = Slider
-        fields = base_fields
+        model = Clients
+        fields = base_fields+('客户姓名',)
 
 

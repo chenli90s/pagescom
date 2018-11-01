@@ -67,3 +67,4 @@ class Clients(BaseModel):
     name = "客户"
 
     more = True
+    客户姓名 = models.CharField(max_length=255)
