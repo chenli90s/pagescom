@@ -68,4 +68,7 @@ def register(request):
 
 @tplt('detail.html')
 def detail(request, name):
-    return dict(name=name)
+    products = OurProduct.objects.filter(产品名字=name)
+    if len(products)>0:
+       return dict(products=products[0])
+    return dict(products=products)

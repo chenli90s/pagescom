@@ -25,13 +25,13 @@
             {#            </div>#}
         </div>
         <div class="row">
-            {% for foo in "123456787654"|make_list %}
+            {% for foo in products %}
                 <div class="col-lg-3 col-md-3 col-sm-6 product">
                     <div class="picture"><img
-                            src="static/picture/8deb749914a442ff965b93049da5159b.gif"
+                            src="{{ foo.上传图片 }}"
                             class="img-responsive" alt=""></div>
                     <div class="info clearfix">
-                        <div class="name">Product Name</div>
+                        <div class="name">{{ foo.产品名字}}</div>
                         {#                    <div class="price">£56.00</div>#}
                         {#                    <div class="star">#}
                         {#                        <ul>#}
@@ -45,7 +45,7 @@
                     </div>
                     <div class="rate"></div>
                     <div class="button">
-                        <a href="" class="fill-blue">
+                        <a href="detail.{{ foo.产品名字 }}" class="fill-blue">
                             <i class="fa fa-eye" aria-hidden="true"></i>
                         查看详情</a>
 {#                        <a href="" class="fill-black">#}

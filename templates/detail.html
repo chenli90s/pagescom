@@ -2,13 +2,23 @@
 
 
 {% block content %}
-    {% include "banner.html" with title=name name="product" %}
+    <link href="static/css/simditor.css" rel="stylesheet">
+    {% include "banner.html" with title=products.产品名字 name=products.产品分类 %}
+    <div style="width: 80%; margin: 50px auto">
+        <div id="product_title" style="text-align: center">
+            <h1>{{ products.产品名字 }}</h1>
+        </div>
+        <div id="product_content">
+            {{ products.产品描述 | safe }}
+        </div>
+    </div>
+
 
 {% endblock %}
 
 
 {% block js %}
-<script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+    <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
 
     <script src="static/js/bootstrap.min.js"></script>
