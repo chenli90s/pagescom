@@ -23,6 +23,7 @@ from api.contact import *
 from api.product import *
 from api.service import *
 from api.globals import *
+from api.msg import *
 
 # home
 router = routers.DefaultRouter()
@@ -41,6 +42,7 @@ router.register('ourPartners', OurPartnersViewSet)
 
 # contact
 router.register('contacts', ContactsViewSet)
+router.register('maps', MapsViewSet)
 
 # service
 router.register('ourGuidances', OurGuidancesViewSet)
@@ -52,6 +54,10 @@ router.register('ourProductcate', OurProductCateViewSet)
 
 # globals
 router.register('globals', GlobalsViewSet)
+
+# msg
+router.register('price', PriceViewSet)
+router.register('message', MessageViewSet)
 
 
 from rest_framework_jwt.views import obtain_jwt_token
