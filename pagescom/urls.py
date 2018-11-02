@@ -61,7 +61,7 @@ router.register('message', MessageViewSet)
 
 
 from rest_framework_jwt.views import obtain_jwt_token
-from api.upload import upload
+from api.upload import upload, price, message
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -70,4 +70,6 @@ urlpatterns = [
     path('', include('pages.urls')),
     path(r'api-token-auth/', obtain_jwt_token),
     path(r'api/upload', upload),
+    path(r'api-cu/price/', price),
+    path(r'api-cu/message/', message),
 ]
