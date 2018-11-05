@@ -6,8 +6,8 @@ class OurGuidance(BaseModel):
 
     more = True
 
-    业务类型 = models.CharField(max_length=255)
-    业务描述 = models.CharField(max_length=255)
+    业务类型 = models.CharField(max_length=255,null=True, blank=True,)
+    业务描述 = models.CharField(max_length=255,null=True, blank=True,)
 
 
 class OurGood(BaseModel):
@@ -17,8 +17,8 @@ class OurGood(BaseModel):
     more = False
 
 
-    擅长的领域描述 = models.CharField(max_length=255)
-    擅长的领域分类 = models.CharField(max_length=255)
+    擅长的领域描述 = models.CharField(max_length=255,null=True, blank=True, )
+    擅长的领域分类 = models.CharField(max_length=255,null=True, blank=True, )
 
 
 class OurTeam(BaseModel):
@@ -27,8 +27,8 @@ class OurTeam(BaseModel):
 
     more = True
 
-    团队人员姓名 = models.CharField(max_length=255)
-    团队人员职位 = models.CharField(max_length=255)
+    团队人员姓名 = models.CharField(max_length=255,null=True, blank=True, )
+    团队人员职位 = models.CharField(max_length=255,null=True, blank=True, )
 
 
 class OurPartners(BaseModel):

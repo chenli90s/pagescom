@@ -9,10 +9,10 @@ class OurProduct(BaseModel):
 
     more = True
 
-    产品名字 = models.CharField(max_length=255)
-    产品描述 = models.CharField(max_length=255)
-    产品分类 = models.CharField(max_length=255)
-    产品属性 = models.CharField(max_length=255)
+    产品名字 = models.CharField(max_length=255,null=True, blank=True, )
+    产品描述 = models.CharField(max_length=255,null=True, blank=True, )
+    产品分类 = models.CharField(max_length=255,null=True, blank=True, )
+    产品属性 = models.CharField(max_length=255,null=True, blank=True, )
 	# 产品评级 = models.CharField(max_length=255)
 
 class OurProductCate(models.Model):
@@ -21,5 +21,5 @@ class OurProductCate(models.Model):
 
     more = True
 
-    产品分类 = models.CharField(max_length=255)
+    产品分类 = models.CharField(max_length=255,null=True, blank=True, )
 

@@ -56,10 +56,10 @@ class Comment(BaseModel):
     more = True
 
 
-    客户头像 = models.CharField(max_length=255)
-    客户姓名 = models.CharField(max_length=255)
-    客户职位 = models.CharField(max_length=255)
-    客户描述 = models.CharField(max_length=255)
+    客户头像 = models.CharField(max_length=255,null=True, blank=True, )
+    客户姓名 = models.CharField(max_length=255,null=True, blank=True, )
+    客户职位 = models.CharField(max_length=255,null=True, blank=True, )
+    客户描述 = models.CharField(max_length=255,null=True, blank=True, )
 
 
 class Clients(BaseModel):
@@ -67,4 +67,4 @@ class Clients(BaseModel):
     name = "客户"
 
     more = True
-    客户姓名 = models.CharField(max_length=255)
+    客户姓名 = models.CharField(max_length=255,null=True, blank=True, )

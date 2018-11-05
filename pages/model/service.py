@@ -7,9 +7,9 @@ class OurGuidances(BaseModel):
 
     more = True
 
-    图标 = models.CharField(max_length=255)
-    服务类型 = models.CharField(max_length=255)
-    指导描述 = models.CharField(max_length=255)
+    图标 = models.CharField(max_length=255,null=True, blank=True, )
+    服务类型 = models.CharField(max_length=255,null=True, blank=True, )
+    指导描述 = models.CharField(max_length=255,null=True, blank=True, )
 
 
 class OurAdvantage(BaseModel):
@@ -19,7 +19,7 @@ class OurAdvantage(BaseModel):
     more = True
 
 
-    优点描述 = models.CharField(max_length=255)
-    优点分类 = models.CharField(max_length=255)
+    优点描述 = models.CharField(max_length=255,null=True, blank=True, )
+    优点分类 = models.CharField(max_length=255,null=True, blank=True, )
 
 
